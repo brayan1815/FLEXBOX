@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contendor__cuadro{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
