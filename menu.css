@@ -5,20 +5,65 @@
 }
 
 .menu{
-  height: 100px;
+  max-height: 50px;
   width: 100%;
   display: flex;
-  background-color: black;
+  background-image: url(espacio.webp);
   color: white;
   align-items: center;
   padding: 20px;
   flex-direction: row;
-  justify-content:space-around;
+  font-size: 15px;
 }
 
+.menu__barra{
+  max-height:  50px; 
+}
 .menu__nombre{
 
   display: block;
   border-right: solid 1px white;
-  padding: 20px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  justify-items: flex-start;
+  padding-left: 0px;
+}
+
+.menu__logo{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  align-items: center;
+}
+.menu__imglogodesarrollador{
+  width: 120px;
+  margin: 15px;
+}
+
+.menu__logocss-tricks{
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
+.menu__grupobotones{
+  display: flex;
+  align-items: stretch;
+  height: 50px;
+  /* align-items: center; */
+}
+
+
+
+.menu__botonesdegrupo{
+  padding: 5px;
+  align-content: center;
+}
+
+.menu__botonesdegrupo:hover{
+  color: rgb(255, 115, 0);
+  background-color: rgba(247, 243, 238, 0.289);
+  cursor: pointer;
 }
