@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sawarabi+Gothic&display=swap');
 
 
+:root{
+  --blanco:white;
+  --naranja:rgb(255, 115, 0);
+  --negro:black;
+}
 
 *{
   margin: 0;
@@ -13,7 +19,7 @@
   width: 100%;
   display: flex;
   background-image: url(espacio.webp);
-  color: white;
+  color: var(--blanco);
   align-items: center;
   padding: 20px;
   flex-direction: row;
@@ -25,18 +31,22 @@
   width: 100%;
 }
 .menu__nombre{
-  display: flex;
-  border-right: solid 1px white;
-  padding: 15px;
+  display: block;
   text-decoration: none;
-  color: white;
+  color: var(--blanco);
   font-size: 45px;
-  justify-items: flex-start;
-  padding-left: 0px;
-  height: 30px;
-  /* align-items: center; */
   font-family: "Dongle", sans-serif;
+}
+
+.menu__contenedornombre{
+  display: flex;
+  height: 37px;
+  border-right: solid 1px var(--blanco);
   align-items: center;
+  padding: 10px;
+  padding-top: 19px;
+  padding-left: 1px;
+  
 }
 
 .menu__opciones{
@@ -49,12 +59,14 @@
 .menu__imglogodesarrollador{
   width: 120px;
   margin: 15px;
+
+
 }
 
 .menu__logocss-tricks{
   width: 20px;
   height: 20px;
-  color: white;
+  color: var(--blanco);
 }
 
 .menu__grupobotones{
@@ -64,23 +76,22 @@
   /* align-items: center; */
 }
 
-
-
 .menu__botonesdegrupo{
   padding: 5px;
   align-content: center;
+  font-family: "Rubik", sans-serif;
 }
 
 .menu__botonesdegrupo:hover{
-  color: rgb(255, 115, 0);
+  color: var(--naranja) ;
   background-color: rgba(247, 243, 238, 0.289);
   cursor: pointer;
 }
 
 .menu__lupa{
   display: block;
-  color: black;
-  background-color: white;
+  color: var(--negro);
+  background-color: var(--blanco);
   border-radius: 50%;
   height: 25px;
   width: 25px;
