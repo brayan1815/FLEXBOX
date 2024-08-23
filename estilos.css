@@ -24,7 +24,7 @@ body{
   /* flex-direction: column-reverse; */
 
   /* flex-wrap: nowrap; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 
   /* flex-flow: column wrap; */
 
@@ -39,6 +39,13 @@ body{
   /* align-items: flex-end; */
   /* align-items: center; */
   /* align-items: stretch; */
+
+  align-content: flex-start;
+  /* align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly */
 }
 
 .contendor__cuadrados{
@@ -50,4 +57,17 @@ body{
   color: white;
   align-content: center;
   border-radius: 15px;
+}
+
+
+.contenedor .contendor__cuadrados:nth-child(3){
+  background-color: slateblue;
+  order:-1;
+}
+
+@media(max-width:800px){
+  .contenedor .contendor__cuadrados:nth-child(3){
+  background-color: slateblue;
+  order:1;
+}
 }

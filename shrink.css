@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor{
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: aqua;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.item{
+  width: 200px;
+  height: 200px;
+  background-color: steelblue;
+  display: flex;
+  border: solid 1px black;
+  align-items: center;
+  justify-content: center;
+}
+
+.item:nth-child(2){
+  /* flex-shrink: 2; */
+  background-color: blueviolet;
+  flex-basis: 100px;
+  align-self: flex-end;
+}
